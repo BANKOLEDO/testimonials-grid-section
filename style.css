@@ -22,7 +22,7 @@
     font-family: Barlow Semi Condensed;
     min-width: 100vw;
     min-height: 100vh;
-    background-color: var(--light-gray);
+    background-color: var(--light-grayish-blue);
     display: grid;
     justify-items: center;
     align-items: center;
@@ -146,7 +146,7 @@
 @media (min-width: 1240px) {
     
     body {
-        background-color: var(--light-gray);
+        background-color: var(--light-grayish-blue);
         min-width: 100vw;
         min-height: 100vh;
         display: grid;
