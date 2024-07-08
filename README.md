@@ -34,7 +34,7 @@ Mobile View
 ### Links
 
 - Solution URL: [My Solution](https://github.com/BANKOLEDO/testimonials-grid-section)
-- Live Site URL: [Page Preview](https://your-live-site-url.com)
+- Live Site URL: [Page Preview](https://bankoledo.github.io/testimonials-grid-section/)
 
 ## My process
 
