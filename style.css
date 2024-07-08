@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary Colors */
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+
+     /* Neutral Colors */
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+.entire-page {
+    font-family: Barlow Semi Condensed;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--light-gray);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.first-container {
+    position: relative;
+    margin: 4rem 0  0 0;
+    background-color: var(--moderate-violet);
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+    min-height: 32rem;
+    border-radius: 1rem;
+}
+
+
+
+.second-container {
+    background-color: var(--very-dark-grayish-blue);
+    width: 22rem;
+    min-height: 19rem;
+    border-radius: 1rem;
+}
+
+.third-container {
+    background-color: var(--white);
+    width: 22rem;
+    min-height: 18rem;
+    border-radius: 1rem;
+}
+
+.fourth-container {
+    width: 22rem;
+    min-height: 18rem;
+    background-color: var(--very-dark-blackish-blue);
+    border-radius: 1rem;
+}
+
+.fifth-container {
+    width: 22rem;
+    min-height: 30rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    margin-bottom: 4rem;
+}
+
+.top-block {
+    display: flex;
+    margin: 1.5rem 0 1rem 0;
+    align-items: center;
+}
+
+.quote {
+    width: 7rem;
+    height: 7rem;
+    position: absolute;
+    left: 14rem;
+    opacity: 0.66;
+}
+
+.avatar {
+    width: 3rem;
+    height: 3rem;
+    border: 4px solid hsl(263, 47%, 66%);
+    border-radius: 50%;
+    margin-left: 2rem;
+}
+
+.name-verification {
+    margin-left: 1rem;
+    line-height: 1.4rem;
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.remark-highlight {
+    text-align: left;
+    line-height: 1.6rem;
+    margin: 0 1.6rem 1rem 2rem;
+    font-size: 1.4rem;
+    color: var(--white);
+    font-weight: 550;
+}
+
+.remark {
+    margin: 2rem 3rem 1rem 2rem;
+    color: var(--light-gray);
+    font-weight: 550;
+    font-size: 1.1rem;
+}
+
+.verified {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--light-gray);
+}
+
+.dark {
+    color: var(--very-dark-grayish-blue);
+}
+
+.border-none {
+    border: none;
+}
+.attribution { 
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 1240px) {
+    
+    body {
+        background-color: var(--light-gray);
+        min-width: 100vw;
+        min-height: 100vh;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas: 
+        ". . ."
+        ". b ."
+        "f f f"
+        ;
+    }
+
+    footer {
+        grid-area: f;
+    }
+
+    .entire-page {
+        grid-area: b;
+        min-width: unset;
+        padding: 8rem;
+        min-height: unset;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: auto auto;
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+
+    .first-container {
+        margin: unset;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        width: 100%;
+        min-height: unset;
+        height: 100%;
+    }
+
+    .second-container {
+        grid-column: 3 / 4;
+        width: 100%;
+        min-height: unset;
+        height: 100%;
+    }
+
+    .third-container {
+        grid-column: 1 / 2;
+        width: 100%;
+        min-height: unset;
+        height: 100%;
+    }
+
+    .fourth-container {
+        grid-row: 2 / 3;
+        grid-column: 2 / 4;
+        width: 100%;
+        min-height: unset;
+        height: 100%;
+    }
+
+    .fifth-container {
+        margin: unset;
+        grid-column: 4 / 5;
+        grid-row: 1 / 3;
+        min-height: unset;
+        height: 100%;
+        width: 20rem;
+    }
+    .quote {
+        width: 7rem;
+        height: 7rem;
+        position: absolute;
+        left: 65%;
+        opacity: 0.7;
+    }
+}
